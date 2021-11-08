@@ -23,5 +23,6 @@ from .settings import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('product.urls')),
+    path('account/', include('account.urls'))
 ]
 urlpatterns += static(MEDIA_URL, document_root=MEDIA_ROOT)
